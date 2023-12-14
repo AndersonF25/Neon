@@ -9,6 +9,7 @@
   place-items: center;
   transition: 0.3s;
   display: none;
+  
 
   .linha {
     width: 20px;
@@ -36,9 +37,12 @@
   transition: 0.3s;
 }
 
+
+
 @include responsive(850px) {
   .btn-mobile {
     margin-right: 10px;
     display: grid;
   }
 }
+
