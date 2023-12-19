@@ -98,7 +98,7 @@ header .container .list-itens li .btn:hover {
   width: 100%;
   background-image: linear-gradient(to right, #1798f0, #74d5ff);
   padding-top: 7.5rem;
-  height: 85vh;
+  min-height: 85vh;
   position: relative;
 }
 .s-hero .container {
@@ -333,7 +333,7 @@ header .container .list-itens li .btn:hover {
 }
 @media (max-width: 836px) {
   .s-hero {
-    height: 118vh;
+    height: 70vh;
   }
 }
 @media (max-width: 771px) {
@@ -372,7 +372,7 @@ header .container .list-itens li .btn:hover {
 }
 @media (max-width: 568px) {
   .s-hero {
-    height: 117vh;
+    height: 127vh;
   }
   .s-hero .container {
     max-width: 360px;
@@ -408,7 +408,7 @@ header .container .list-itens li .btn:hover {
 }
 @media (max-width: 375px) {
   .s-hero {
-    height: 138vh;
+    height: 152vh;
   }
 }
 

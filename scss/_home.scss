@@ -2,7 +2,7 @@
   width: 100%;
   background-image: linear-gradient(to right, $bg, $second-bg);
   padding-top: 7.5rem;
-  height: 85vh;
+  min-height: 85vh;
   position: relative;
 
   .container {
@@ -11,6 +11,8 @@
     margin: 0 auto;
     display: flex;
 
+   
+
     .itens-menu {
       display: none;
       width: 180px;
@@ -18,21 +20,19 @@
       background-color: $clear;
       transition: 0.4s;
 
-      a{
+      a {
         border-bottom: 1px solid #f1f1f1;
-        transition: .4s;
-        &:hover{
+        transition: 0.4s;
+        &:hover {
           border-color: #000;
-          transition: .4s;
+          transition: 0.4s;
         }
-      } 
+      }
 
-      .conta{
+      .conta {
         @include btn-primary-responsive;
       }
-      
     }
-
 
     .info {
       @include flex-box(start, column, start);
@@ -136,12 +136,14 @@
     .itens-menu.ativo {
       display: block;
       position: absolute;
-      top: -3px;
-      right: 10px;
-      transition: 0.4s;
-      @include flex-box(start,column,center);
+      width: 100vw;
+     height: 50vh;
+     top: 0;
+     
+      transition: 0.7s;
+      @include flex-box(center, column, center);
       padding-left: 15px;
-      gap: 12px;
+      gap: 16px;
       border-radius: 10px;
     }
   }
@@ -246,7 +248,7 @@
   }
 
   @include responsive(836px) {
-    height: 118vh;
+    height: 120vh;
   }
   @include responsive(771px) {
     height: 112vh;
@@ -282,7 +284,7 @@
   }
 
   @include responsive(568px) {
-    height: 117vh;
+    height: 127vh;
     .container {
       max-width: 360px;
 
@@ -327,8 +329,9 @@
       }
     }
   }
+
   @include responsive(375px) {
-    height: 138vh;
+    height: 122vh;
   }
 }
 .s-card {
@@ -553,8 +556,6 @@
   @include responsive(1512px) {
     .container {
       @include width-1200px;
-
-      
     }
   }
   @include responsive(1060px) {
