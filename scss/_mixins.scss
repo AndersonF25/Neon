@@ -127,3 +127,10 @@
     @content;
   }
 }
+
+
+@mixin max-width ( $width){
+  @media (max-width: $width){
+    @content
+  }
+}

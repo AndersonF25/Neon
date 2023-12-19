@@ -11,7 +11,15 @@
     margin: 0 auto;
     display: flex;
 
-   
+   .hidden{
+    visibility: hidden;
+   }
+
+   @include max-width(849px){
+    .hidden{
+      visibility: visible;
+    }
+   }
 
     .itens-menu {
       display: none;
@@ -137,9 +145,9 @@
       display: block;
       position: absolute;
       width: 100vw;
-     height: 50vh;
+     height: 55vh;
      top: 0;
-     
+     z-index: 100;
       transition: 0.7s;
       @include flex-box(center, column, center);
       padding-left: 15px;
@@ -331,7 +339,7 @@
   }
 
   @include responsive(375px) {
-    height: 122vh;
+    height: 152vh;
   }
 }
 .s-card {
