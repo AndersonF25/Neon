@@ -15,7 +15,7 @@
     visibility: hidden;
    }
 
-   @include max-width(849px){
+   @include max-width(1289px){
     .hidden{
       visibility: visible;
     }
@@ -144,13 +144,13 @@
     .itens-menu.ativo {
       display: block;
       position: absolute;
-      width: 100vw;
-     height: 55vh;
+      width: 100%;
+     height: 35vh;
      top: 0;
      z-index: 100;
       transition: 0.7s;
       @include flex-box(center, column, center);
-      padding-left: 15px;
+     
       gap: 16px;
       border-radius: 10px;
     }
