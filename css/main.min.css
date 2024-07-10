@@ -9,13 +9,19 @@
   outline: none;
 }
 
+html{
+
+  overflow: scroll;
+}
+
 header {
   width: 100%;
   background-image: linear-gradient(to right, #1798f0, #74d5ff);
   height: 6rem;
   padding: 2.4rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5960784314);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
+
 header .container {
   width: 100%;
   max-width: 90rem;
@@ -23,33 +29,34 @@ header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: row;
 }
+
 header .container .logo {
   padding-left: 17px;
 }
+
 header .container .logo img {
   width: 7.3rem;
   height: 2.1rem;
 }
+
 header .container .list-itens {
   display: flex;
-  align-items: row;
-  justify-content: center;
-  flex-direction: center;
+  align-items: center;
   gap: 2.1rem;
-  position: relative;
   padding-right: 0.625rem;
 }
+
 header .container .list-itens li {
-  height: 1.8rem;
   position: relative;
 }
+
 header .container .list-itens li .itens {
   color: #ffffff;
   font-size: 1.0625rem;
   font-weight: 600;
 }
+
 header .container .list-itens li .itens::before {
   position: absolute;
   content: "";
@@ -58,41 +65,45 @@ header .container .list-itens li .itens::before {
   bottom: 0;
   height: 2px;
   background-color: #ffffff;
-  transition: 0.6s;
+  transition: width 0.6s;
 }
+
 header .container .list-itens li .itens:hover::before {
   width: 100%;
 }
+
 header .container .list-itens li .btn {
   background-color: #ffffff;
   padding: 0.5rem;
   color: #1798f0;
   border-radius: 10px;
   font-weight: 700;
-  transition: 0.3s;
+  transition: background-color 0.3s;
 }
+
 header .container .list-itens li .btn:hover {
   background-color: rgb(219, 219, 219);
-  transition: 0.3s;
 }
+
 @media (max-width: 885px) {
   header .container ul {
     gap: 18px;
   }
 }
+
 @media (max-width: 850px) {
-  header .container li .itens {
-    display: none;
-  }
-  header .container li .btn {
+  header .container .list-itens .itens,
+  header .container .list-itens .btn {
     display: none;
   }
 }
+
 @media (max-width: 500px) {
-  header .container ul .btn {
+  header .container .list-itens .btn {
     display: none;
   }
 }
+
 
 .s-hero {
   width: 100%;
